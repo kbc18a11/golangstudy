@@ -1,13 +1,14 @@
 package main // mainパッケージであることを宣言
+import "fmt"
 
 // fmtモジュールをインポート
 
 func main() { // 最初に実行されるmain()関数を定義
-	const homo = 'aaa'
+	const homo = "a"
 
-	name, age := "Yamada", 26
+	age := 26.0
 
-	homo = name 
-	print(name)
-	print(age)
+	a := 2
+	age += float64(a)
+	fmt.Println(age)
 }
