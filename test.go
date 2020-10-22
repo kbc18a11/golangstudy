@@ -1,9 +1,10 @@
 package main // mainパッケージであることを宣言
 import "fmt"
 
-// fmtモジュールをインポート
+func add(x int, y int) int {
+	return x + y
+}
 
-func main() { // 最初に実行されるmain()関数を定義
-	a1 := [...]string{"Red", "Green", "Blue"}
-	fmt.Println(len(a1))
+func main() {
+	fmt.Println(add(5, 3)) // => 8
 }
