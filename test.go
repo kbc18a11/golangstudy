@@ -1,10 +1,12 @@
-package main // mainパッケージであることを宣言
-import "fmt"
+package main
 
-func add(x int, y int) int {
-	return x + y
-}
+import (
+	"fmt"
+)
 
 func main() {
-	fmt.Println(add(5, 3)) // => 8
+	i := []int{1, 2, 3}
+	p := &i
+	fmt.Println(p[0])
+	fmt.Println(i)
 }
